@@ -1,6 +1,6 @@
 {
 	"name": "@rob.hameetman/eslint-config",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Eslint config for `@rob.hameetman` packages",
 	"author": "Robert Hameetman <rob@rham.io>",
 	"license": "MIT",
@@ -21,12 +21,13 @@
 		"test": "__tests__"
 	},
 	"files": [
-		"dist"
+		"./dist",
+		"./index.js"
 	],
 	"scripts": {
-		"build": "NODE_ENV=production tsc -P tsconfig.json",
+		"build": "NODE_ENV=production rm -rf ./dist && tsc -P tsconfig.json",
 		"dev": "NODE_ENV=development ts-node -P ./tsconfig.module.json ./src/cli.ts",
-		"lint": "eslint ./src/* --ext=ts",
+		"lint": "eslint ./src/* --ext=ts --fix",
 		"prod": "NODE_ENV=production node ./dist/main/cli.js",
 		"test": "NODE_ENV=testing jest -co --watch --notify --runInBand --detectOpenHandles"
 	},
@@ -43,7 +44,6 @@
 	"devDependencies": {
 		"@types/eslint": "^6.1.9",
 		"@types/jest": "^25.2.1",
-		"@types/mocha": "^7.0.2",
 		"@types/node": "^13.11.0",
 		"husky": "^4.2.3",
 		"jest": "^25.3.0",
@@ -68,7 +68,7 @@
 		"semi": true,
 		"trailingComma": "all",
 		"singleQuote": true,
-		"printWidth": 100,
+		"printWidth": 80,
 		"tabWidth": 2
 	},
 	"jest": {

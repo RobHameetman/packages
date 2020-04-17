@@ -29,4 +29,7 @@ export type EsLintActiveRules =
 	| EsLintStyleRules
 	| EsLintVariablesRules;
 
-export type EsLintRules = EsLintActiveRules | EsLintDeprecatedRules | EsLintRemovedRules;
+export type EsLintRules =
+	| EsLintActiveRules
+	| EsLintDeprecatedRules
+	| EsLintRemovedRules;

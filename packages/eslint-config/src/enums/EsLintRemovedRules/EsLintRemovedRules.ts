@@ -21,5 +21,8 @@ export enum EsLintRemovedRules {
 
 export type EsLintRemovedRule = keyof typeof EsLintRemovedRules;
 
-export const isEsLintRemovedRule = (value: unknown): value is EsLintRemovedRule =>
-	typeof value === 'string' && (Object.values(EsLintRemovedRules) as Array<string>).includes(value);
+export const isEsLintRemovedRule = (
+	value: unknown,
+): value is EsLintRemovedRule =>
+	typeof value === 'string' &&
+	(Object.values(EsLintRemovedRules) as Array<string>).includes(value);

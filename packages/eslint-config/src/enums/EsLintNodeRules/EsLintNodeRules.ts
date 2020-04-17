@@ -15,4 +15,5 @@ export enum EsLintNodeRules {
 export type EsLintNodeRule = keyof typeof EsLintNodeRules;
 
 export const isEsLintNodeRule = (value: unknown): value is EsLintNodeRule =>
-	typeof value === 'string' && (Object.values(EsLintNodeRules) as Array<string>).includes(value);
+	typeof value === 'string' &&
+	(Object.values(EsLintNodeRules) as Array<string>).includes(value);

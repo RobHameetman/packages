@@ -26,6 +26,8 @@ export enum EsLintPluginTypeScriptRules {
 
 export type EsLintPluginTypeScriptRule = keyof typeof EsLintPluginTypeScriptRules;
 
-export const isEsLintPluginTypeScriptRule = (value: unknown): value is EsLintPluginTypeScriptRule =>
+export const isEsLintPluginTypeScriptRule = (
+	value: unknown,
+): value is EsLintPluginTypeScriptRule =>
 	typeof value === 'string' &&
 	(Object.values(EsLintPluginTypeScriptRules) as Array<string>).includes(value);

@@ -1,3 +1,5 @@
 import { EsLintBestPracticesRules as R, Severity } from '../../../enums';
 
-export default { [R.PreferPromiseRejectErrors]: [Severity.error, { allowEmptyReject: true }] };
+export default {
+	[R.PreferPromiseRejectErrors]: [Severity.error, { allowEmptyReject: true }],
+};

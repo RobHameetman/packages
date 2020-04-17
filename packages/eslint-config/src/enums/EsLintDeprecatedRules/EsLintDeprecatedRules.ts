@@ -15,6 +15,8 @@ export enum EsLintDeprecatedRules {
 
 export type EsLintDeprecatedRule = keyof typeof EsLintDeprecatedRules;
 
-export const isEsLintDeprecatedRule = (value: unknown): value is EsLintDeprecatedRule =>
+export const isEsLintDeprecatedRule = (
+	value: unknown,
+): value is EsLintDeprecatedRule =>
 	typeof value === 'string' &&
 	(Object.values(EsLintDeprecatedRules) as Array<string>).includes(value);

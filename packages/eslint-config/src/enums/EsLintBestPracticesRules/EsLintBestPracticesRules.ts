@@ -82,6 +82,8 @@ export enum EsLintBestPracticesRules {
 
 export type EsLintBestPracticesRule = keyof typeof EsLintBestPracticesRules;
 
-export const isEsLintBestPracticesRule = (value: unknown): value is EsLintBestPracticesRule =>
+export const isEsLintBestPracticesRule = (
+	value: unknown,
+): value is EsLintBestPracticesRule =>
 	typeof value === 'string' &&
 	(Object.values(EsLintBestPracticesRules) as Array<string>).includes(value);

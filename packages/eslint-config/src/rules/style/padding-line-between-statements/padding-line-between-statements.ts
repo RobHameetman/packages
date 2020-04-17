@@ -1,9 +1,18 @@
-import { Linebreaks, EsLintStyleRules as R, Severity, Statements } from '../../../enums';
+import {
+	Linebreaks,
+	EsLintStyleRules as R,
+	Severity,
+	Statements,
+} from '../../../enums';
 
 const EXPORT_STATEMENTS = [Statements.export, Statements.cjsExport];
 const IMPORT_STATEMENTS = [Statements.import, Statements.cjsImport];
 const SWITCH_LABELS = [Statements.case, Statements.default];
-const VARIABLE_DECLARATIONS = [Statements.const, Statements.let, Statements.var];
+const VARIABLE_DECLARATIONS = [
+	Statements.const,
+	Statements.let,
+	Statements.var,
+];
 
 const BLOCK_LIKE = [
 	Statements.blockLike,
@@ -45,6 +54,10 @@ export default {
 		{ blankLine: Linebreaks.never, prev: SWITCH_LABELS, next: '*' },
 		{ blankLine: Linebreaks.always, prev: '*', next: 'return' },
 		{ blankLine: Linebreaks.always, prev: EXPORT_STATEMENTS, next: '*' },
-		{ blankLine: Linebreaks.any, prev: EXPORT_STATEMENTS, next: EXPORT_STATEMENTS },
+		{
+			blankLine: Linebreaks.any,
+			prev: EXPORT_STATEMENTS,
+			next: EXPORT_STATEMENTS,
+		},
 	],
 };

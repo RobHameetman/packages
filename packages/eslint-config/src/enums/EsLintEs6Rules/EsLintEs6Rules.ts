@@ -36,4 +36,5 @@ export enum EsLintEs6Rules {
 export type EsLintEs6Rule = keyof typeof EsLintEs6Rules;
 
 export const isEsLintEs6Rule = (value: unknown): value is EsLintEs6Rule =>
-	typeof value === 'string' && (Object.values(EsLintEs6Rules) as Array<string>).includes(value);
+	typeof value === 'string' &&
+	(Object.values(EsLintEs6Rules) as Array<string>).includes(value);

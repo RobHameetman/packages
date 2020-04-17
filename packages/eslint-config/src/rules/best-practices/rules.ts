@@ -6,7 +6,6 @@ import ComplexityRule from './complexity';
 import ConsistentReturnRule from './consistent-return';
 import CurlyRule from './curly';
 import DefaultCaseRule from './default-case';
-import DefaultCaseLastRule from './default-case-last';
 import DefaultParamLastRule from './default-param-last';
 import DotLocationRule from './dot-location';
 import DotNotationRule from './dot-notation';
@@ -23,7 +22,6 @@ import NoElseReturnRule from './no-else-return';
 import NoEmptyFunctionRule from './no-empty-function';
 import NoEqNullRule from './no-eq-null';
 import NoEvalRule from './no-eval';
-import NoExtendedNativeRule from './no-extended-native';
 import NoExtraBindRule from './no-extra-bind';
 import NoExtraLabelRule from './no-extra-label';
 import NoFallthroughRule from './no-fallthrough';
@@ -85,7 +83,6 @@ export const rules = {
 	...ConsistentReturnRule,
 	...CurlyRule,
 	...DefaultCaseRule,
-	...DefaultCaseLastRule,
 	...DefaultParamLastRule,
 	...DotLocationRule,
 	...DotNotationRule,
@@ -102,7 +99,6 @@ export const rules = {
 	...NoEmptyFunctionRule,
 	...NoEqNullRule,
 	...NoEvalRule,
-	...NoExtendedNativeRule,
 	...NoExtraBindRule,
 	...NoExtraLabelRule,
 	...NoFallthroughRule,

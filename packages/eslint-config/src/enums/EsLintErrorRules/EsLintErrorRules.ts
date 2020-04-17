@@ -43,4 +43,5 @@ export enum EsLintErrorRules {
 export type EsLintErrorRule = keyof typeof EsLintErrorRules;
 
 export const isEsLintErrorRule = (value: unknown): value is EsLintErrorRule =>
-	typeof value === 'string' && (Object.values(EsLintErrorRules) as Array<string>).includes(value);
+	typeof value === 'string' &&
+	(Object.values(EsLintErrorRules) as Array<string>).includes(value);
