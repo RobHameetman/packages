@@ -34,8 +34,8 @@ how to deploy the project on a live system.
 
 What things you need to install the software and how to install them
 
-Node v10+
-NPM v6+
+* Node v10+
+* NPM v6+
 
 ### 📲 Installing
 
