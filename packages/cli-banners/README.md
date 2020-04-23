@@ -1,13 +1,17 @@
-![@inspire11/banners][logo]
+![@rob.hameetman/cli-banners][logo]
 
-![Version](https://img.shields.io/npm/v/@inspire11/banners)
-![Downloads](https://img.shields.io/npm/dt/@inspire11/banners)
-![Build](https://img.shields.io/bitbucket/pipelines/inspire11/banners/master)
-![License](https://img.shields.io/npm/l/@inspire11/banners)
+![Version](https://img.shields.io/npm/v/@rob.hameetman/cli-banners)
+![Downloads](https://img.shields.io/npm/dt/@rob.hameetman/cli-banners)
+![Build](https://img.shields.io/bitbucket/pipelines/rob.hameetman/cli-banners/master)
+![License](https://img.shields.io/npm/l/@rob.hameetman/cli-banners)
 
-# 📦 @inspire11/banners
+# 📦 @rob.hameetman/cli-banners
 
-This package is a collection of Inspire11 banners for use in CLI tooling. These banners are difficult to hardcode in JavaScript/TypeScript projects because of how the characters `'`, `"`, and `\`` are used stylistically. Further, we can't just the Node filesystem or dynamic imports because we'll quickly run into errors out in the wild with NPX. This workaround bundles our banners with webpack from from easy-to-manage text files and allows us to reliably add Inspire11 branding to our CLI projects.
+This package is a collection of personal banners for use in CLI tooling. These banners are difficult to hardcode in
+JavaScript/TypeScript projects because of how the characters `'`, `"`, and `\`` are used stylistically. Further, one
+can't just use the Node filesystem or dynamic imports because you'll quickly run into errors out in the wild with NPX.
+This workaround bundles these banners with webpack from from easy-to-manage text files and allows me to reliably add
+personal branding to my CLI projects.
 
 1. [💼 Getting Started](#markdown-header-getting-started)
   1.1 [📚 Prerequisites](#markdown-header-prerequisites)
@@ -17,7 +21,7 @@ This package is a collection of Inspire11 banners for use in CLI tooling. These 
   2.2 [🛁 Static Analysis](#markdown-header-static-analysis)
 3. [🛥 Deployment](#markdown-header-deployment)
 4. [🧾 Important Dependencies](#markdown-header-important-dependencies)
-5. [🙌🏼 Contributing](#markdown-header-contributing)
+5. [🙌🏼 Adding Banners](#markdown-header-adding-banners)
 6. [🏷 Versioning](#markdown-header-versioning)
 7. [📜 Authors](#markdown-header-authors)
 8. [📄 License](#markdown-header-license)
@@ -25,7 +29,8 @@ This package is a collection of Inspire11 banners for use in CLI tooling. These 
 
 ## 💼 Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing
+purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### 📚 Prerequisites
 
@@ -40,7 +45,7 @@ Give examples
 To install the package, clone and build the repo, then use `npm` to install dependencies.
 
 ```bash
-git clone git@bitbucket.org:inspire11/banners.git
+git clone git@bitbucket.org:rob.hameetman/cli-banners.git
 cd banners
 npm i
 ```
@@ -51,7 +56,7 @@ To push changes and use new banners, update the package version and publish to N
 
 ```bash
 git version patch
-npm publish --access=public
+npm publish
 ```
 
 ## 🧾 Important Dependencies
@@ -61,7 +66,7 @@ npm publish --access=public
 * [Webpack](https://webpack.js.org/) - The build pipeline used
 * [Babel](https://babeljs.io/) - JavaScript/TypeScript transpiler
 
-## 🙌🏼 Contributing
+## 🙌🏼 Adding Banners
 
 To add a banner to this package, create a text file with the format `{{bannerName}}.txt`:
 
@@ -69,7 +74,8 @@ To add a banner to this package, create a text file with the format `{{bannerNam
 touch {{bannerName}}.txt
 ```
 
-You can find ideas for your banner [here](http://patorjk.com/software/taag/#p=testall&f=Graffiti&t=Inspire11), or use your own. Once you've got a banner, add it to `{{bannerName}}.txt`. Then, add the following to `index.ts`:
+You can find ideas for your banner [here](http://patorjk.com/software/taag/#p=testall&f=Graffiti&t=rob.hameetman)cli-, or
+use your own. Once you've got a banner, add it to `{{bannerName}}.txt`. Then, add the following to `index.ts`:
 
 ```TypeScript
 import {{bannerName}} from './{{bannerName}}.txt';
@@ -112,12 +118,12 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## 📜 Authors
 
-* **Robert Hameetman** - *<robert.hameetman@inspire11.com>*
+* **Robert Hameetman** - *<robert.hameetman@rob.hameetman.cli-com>*
 
-See also the list of [contributors](https://bitbucket.org/inspire11/banners/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/RobHameetman/packages/graphs/contributors) who participated in this project.
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-[logo]: /.bitbucket/logo.png "@inspire11/banners"
+[logo]: /.github/logo.png "@rob.hameetman/cli-banners"
