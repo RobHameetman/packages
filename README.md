@@ -10,19 +10,19 @@
 This project is a curated collection of public packages for personal use across
 distributed and internal solutions.
 
-1. [💼 Getting Started](#markdown-header-getting-started)
-1.1. [📚 Prerequisites](#markdown-header-prerequisites)
-1.2. [📲 Installing](#markdown-header-installing)
-2. [🛠 Testing](#markdown-header-testing)
-2.1. [🔁 E2E](#markdown-header-e2e)
-2.2. [🛁 Static Analysis](#markdown-header-static-analysis)
-3. [🛥 Deployment](#markdown-header-deployment)
-4. [🧾 Important Dependencies](#markdown-header-important-dependencies)
-5. [🙌🏼 Adding Banners](#markdown-header-adding-banners)
-6. [🏷 Versioning](#markdown-header-versioning)
-7. [📜 Authors](#markdown-header-authors)
-8. [📄 License](#markdown-header-license)
-9. [📯 Acknowledgments](#markdown-header-acknowledgments)
+* [💼 Getting Started](#markdown-header-getting-started)
+  * [📚 Prerequisites](#markdown-header-prerequisites)
+  * [📲 Installing](#markdown-header-installing)
+* [🛠 Testing](#markdown-header-testing)
+  * [🔁 E2E](#markdown-header-e2e)
+  * [🛁 Static Analysis](#markdown-header-static-analysis)
+* [🛥 Deployment](#markdown-header-deployment)
+* [🧾 Important Dependencies](#markdown-header-important-dependencies)
+* [🙌🏼 Adding Banners](#markdown-header-adding-banners)
+* [🏷 Versioning](#markdown-header-versioning)
+* [📜 Authors](#markdown-header-authors)
+* [📄 License](#markdown-header-license)
+* [📯 Acknowledgments](#markdown-header-acknowledgments)
 
 ## 💼 Getting Started
 
