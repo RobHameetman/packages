@@ -1,0 +1,97 @@
+{
+	"name": "@rob.hameetman/create-hire",
+	"version": "0.1.2",
+	"description": "NPM initializer used for generating Requests For Proposal",
+	"author": "Robert Hameetman (rob@rham.io)",
+	"license": "MIT",
+	"homepage": "https://github.com/RobHameetman/packages#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RobHameetman/packages.git"
+	},
+	"bugs": {
+		"url": "https://github.com/RobHameetman/packages/issues"
+	},
+	"main": "./dist/main/index.js",
+	"module": "./dist/module/index.js",
+	"typings": "./dist/main/index.d.ts",
+	"bin": {
+		"create": "./bin/create"
+	},
+	"directories": {
+		"lib": "lib",
+		"test": "__test__"
+	},
+	"files": [
+		"dist",
+		"bin"
+	],
+	"scripts": {
+		"build": "NODE_ENV=production tsc -P tsconfig.json && tsc -P tsconfig.module.json",
+		"dev": "NODE_ENV=development ts-node -P ./tsconfig.module.json ./src/cli.ts",
+		"prod": "NODE_ENV=production node ./dist/main/cli.js",
+		"test": "NODE_ENV=testing jest -co --watch --notify"
+	},
+	"dependencies": {
+		"@rob.hameetman/cli-banners": "0.0.2",
+		"@rob.hameetman/send-sms": "^1.0.0",
+		"chalk": "^4.0.0",
+		"commander": "^5.0.0",
+		"google-libphonenumber": "^3.2.8",
+		"gradient-string": "^1.2.0",
+		"inquirer": "^7.1.0",
+		"lodash": "^4.17.15",
+		"nodemailer": "^6.4.6",
+		"open": "^7.0.3",
+		"ora": "^4.0.3",
+		"rxjs": "^6.5.5"
+	},
+	"devDependencies": {
+		"@rob.hameetman/eslint-config": "^0.0.3",
+		"@types/chalk": "^2.2.0",
+		"@types/google-libphonenumber": "^7.4.17",
+		"@types/gradient-string": "^1.1.0",
+		"@types/inquirer": "^6.5.0",
+		"@types/jest": "^25.2.1",
+		"@types/lodash": "^4.14.149",
+		"@types/node": "^13.11.0",
+		"@types/node-fetch": "^2.5.6",
+		"husky": "^4.2.3",
+		"jest": "^25.4.0",
+		"ts-jest": "^25.3.1",
+		"ts-node": "^8.8.2",
+		"typescript": "^3.8.3"
+	},
+	"eslintConfig": {
+		"extends": [
+			"@rob.hameetman/eslint-config"
+		]
+	},
+	"eslintIgnore": [
+		"dist"
+	],
+	"prettier": {
+		"semi": true,
+		"trailingComma": "all",
+		"singleQuote": true,
+		"printWidth": 80,
+		"tabWidth": 2
+	},
+	"jest": {
+		"roots": [
+			"<rootDir>/src"
+		],
+		"testMatch": [
+			"**/__tests__/**/*.ts",
+			"**/?*.spec.ts"
+		],
+		"transform": {
+			"^.+\\.ts$": "ts-jest"
+		}
+	},
+	"husky": {
+		"hooks": {
+			"pre-publish": "npm run build"
+		}
+	}
+}

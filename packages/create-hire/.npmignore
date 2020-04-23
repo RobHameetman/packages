@@ -1,0 +1,12 @@
+./src
+**/__test__
+.env
+.env.example
+tsconfig.json
+tsconfig.module.json
+.github
+.vscode
+**/*.spec.*
+coverage
+.nyc_output
+*.log
