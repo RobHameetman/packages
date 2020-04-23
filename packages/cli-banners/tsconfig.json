@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "commonjs",
+    "target": "esnext",
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2017",
+      "dom"
+    ],
+    "sourceMap": true,
+    "allowJs": false,
+    "moduleResolution": "node",
+    "rootDirs": [
+      "lib",
+      "typings"
+    ],
+    "baseUrl": "lib",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noImplicitUseStrict": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "files": [
+    "lib/index.ts"
+  ],
+  "include": [
+    "lib/**/*",
+    "typings/*.d.ts",
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+  ]
+}

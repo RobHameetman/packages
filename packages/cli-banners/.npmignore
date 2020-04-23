@@ -1,0 +1,8 @@
+./lib
+./typings
+tsconfig.json
+tsconfig.types.json
+.vscode
+.editorConfig
+README.md
+webpack.config.ts
