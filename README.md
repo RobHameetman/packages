@@ -11,11 +11,11 @@ This project is a curated collection of public packages for personal use across
 distributed and internal solutions.
 
 1. [💼 Getting Started](#markdown-header-getting-started)
-  1.1 [📚 Prerequisites](#markdown-header-prerequisites)
-  1.2 [📲 Installing](#markdown-header-installing)
+    1.1 [📚 Prerequisites](#markdown-header-prerequisites)
+    1.2 [📲 Installing](#markdown-header-installing)
 2. [🛠 Testing](#markdown-header-testing)
-  2.1 [🔁 E2E](#markdown-header-e2e)
-  2.2 [🛁 Static Analysis](#markdown-header-static-analysis)
+    2.1 [🔁 E2E](#markdown-header-e2e)
+    2.2 [🛁 Static Analysis](#markdown-header-static-analysis)
 3. [🛥 Deployment](#markdown-header-deployment)
 4. [🧾 Important Dependencies](#markdown-header-important-dependencies)
 5. [🙌🏼 Adding Banners](#markdown-header-adding-banners)
