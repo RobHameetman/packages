@@ -34,9 +34,8 @@ how to deploy the project on a live system.
 
 What things you need to install the software and how to install them
 
-```
-Give examples
-```
+Node v10+
+NPM v6+
 
 ### 📲 Installing
 
@@ -45,7 +44,7 @@ dependencies for each package.
 
 ```bash
 git clone git@bitbucket.org:rob.hameetman.git
-cd packages/cli-banners
+cd packages/eslint-config
 npm i
 ```
 
