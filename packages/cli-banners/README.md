@@ -13,19 +13,16 @@ can't just use the Node filesystem or dynamic imports because you'll quickly run
 This workaround bundles these banners with webpack from from easy-to-manage text files and allows me to reliably add
 personal branding to my CLI projects.
 
-1. [💼 Getting Started](#markdown-header-getting-started)
-  1.1 [📚 Prerequisites](#markdown-header-prerequisites)
-  1.2 [📲 Installing](#markdown-header-installing)
-2. [🛠 Testing](#markdown-header-testing)
-  2.1 [🔁 E2E](#markdown-header-e2e)
-  2.2 [🛁 Static Analysis](#markdown-header-static-analysis)
-3. [🛥 Deployment](#markdown-header-deployment)
-4. [🧾 Important Dependencies](#markdown-header-important-dependencies)
-5. [🙌🏼 Adding Banners](#markdown-header-adding-banners)
-6. [🏷 Versioning](#markdown-header-versioning)
-7. [📜 Authors](#markdown-header-authors)
-8. [📄 License](#markdown-header-license)
-9. [📯 Acknowledgments](#markdown-header-acknowledgments)
+- [📦 @rob.hameetman/cli-banners](#%f0%9f%93%a6-robhameetmancli-banners)
+  - [💼 Getting Started](#%f0%9f%92%bc-getting-started)
+    - [📚 Prerequisites](#%f0%9f%93%9a-prerequisites)
+    - [📲 Installing](#%f0%9f%93%b2-installing)
+  - [🛥 Deployment](#%f0%9f%9b%a5-deployment)
+  - [🧾 Important Dependencies](#%f0%9f%a7%be-important-dependencies)
+  - [🙌🏼 Adding Banners](#%f0%9f%99%8c%f0%9f%8f%bc-adding-banners)
+  - [🏷 Versioning](#%f0%9f%8f%b7-versioning)
+  - [📜 Authors](#%f0%9f%93%9c-authors)
+  - [📄 License](#%f0%9f%93%84-license)
 
 ## 💼 Getting Started
 
