@@ -1,4 +1,4 @@
-![@rob.hameetman/create-hire][logo]
+![@rob.hameetman/create-hire][header]
 
 ![Version](https://img.shields.io/npm/v/@rob.hameetman/create-hire)
 ![Downloads](https://img.shields.io/npm/dt/@rob.hameetman/create-hire)
@@ -73,4 +73,4 @@ See also the list of [contributors](https://github.com/RobHameetman/packages/gra
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-[logo]: /.github/readme-create-hire.png "@rob.hameetman/create-hire"
+[header]: /.github/readme-create-hire.png "@rob.hameetman/create-hire"

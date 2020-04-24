@@ -1,4 +1,4 @@
-![@rob.hameetman/cli-banners][logo]
+![@rob.hameetman/cli-banners][header]
 
 ![Version](https://img.shields.io/npm/v/@rob.hameetman/cli-banners)
 ![Downloads](https://img.shields.io/npm/dt/@rob.hameetman/cli-banners)
@@ -123,4 +123,4 @@ See also the list of [contributors](https://github.com/RobHameetman/packages/gra
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-[logo]: /.github/readme-cli-banners.png "@rob.hameetman/cli-banners"
+[header]: /.github/readme-cli-banners.png "@rob.hameetman/cli-banners"
