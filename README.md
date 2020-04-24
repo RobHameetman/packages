@@ -77,4 +77,4 @@ See also the list of [contributors](https://github.com/RobHameetman/packages/gra
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-[logo]: /.github/logo.png "@rob.hameetman"
+[logo]: /.github/readme-root.png "@rob.hameetman"

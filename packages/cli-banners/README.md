@@ -126,4 +126,4 @@ See also the list of [contributors](https://github.com/RobHameetman/packages/gra
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-[logo]: /.github/logo.png "@rob.hameetman/cli-banners"
+[logo]: /.github/readme-cli-banners.png "@rob.hameetman/cli-banners"
