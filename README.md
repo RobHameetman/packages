@@ -1,4 +1,4 @@
-![@rob.hameetman][logo]
+![@rob.hameetman][header]
 
 # 📦 @rob.hameetman
 
@@ -68,4 +68,4 @@ See also the list of [contributors](https://github.com/RobHameetman/packages/gra
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-[logo]: /.github/readme-root.png "@rob.hameetman"
+[header]: /.github/readme-root.png "@rob.hameetman"
