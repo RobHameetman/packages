@@ -1,10 +1,5 @@
 ![@rob.hameetman][logo]
 
-![Version](https://img.shields.io/npm/v/@rob.hameetman)
-![Downloads](https://img.shields.io/npm/dt/@rob.hameetman)
-![Build](https://img.shields.io/bitbucket/pipelines/rob.hameetman/master)
-![License](https://img.shields.io/npm/l/@rob.hameetman)
-
 # 📦 @rob.hameetman
 
 This project is a curated collection of public packages for personal use across
