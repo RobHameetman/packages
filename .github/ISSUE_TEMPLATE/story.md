@@ -2,7 +2,7 @@
 name: Story
 about: Define the issue well for everyone involved
 title: ''
-labels: ''
+labels: Story
 assignees: RobHameetman
 
 ---
