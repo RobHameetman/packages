@@ -1,4 +1,4 @@
 export * from './handleBrowseProjectsStub';
-export * from './handleDecisionsWithStubs';
+export * from './handleDecisionsWithStubsFor';
 export * from './handleRequestInterviewStub';
 export * from './handleReviewResumeStub';

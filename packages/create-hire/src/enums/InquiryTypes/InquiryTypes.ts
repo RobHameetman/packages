@@ -1,15 +1,16 @@
-import { Answers, QuestionMap, createPromptModule } from 'inquirer';
+import { QuestionMap, createPromptModule } from 'inquirer';
+import { DecisionTree } from './../../types';
 
 export enum InquiryTypes {
-  input = 'input',
-  number = 'number',
-  password = 'password',
-  list = 'list',
-  rawlist = 'rawlist',
-  expand = 'expand',
-  checkbox = 'checkbox',
-  confirm = 'confirm',
-  editor = 'editor',
+	input = 'input',
+	number = 'number',
+	password = 'password',
+	list = 'list',
+	rawlist = 'rawlist',
+	expand = 'expand',
+	checkbox = 'checkbox',
+	confirm = 'confirm',
+	editor = 'editor',
 }
 
 /**
@@ -17,10 +18,14 @@ export enum InquiryTypes {
  * question types and this type would not need to change. The enum
  * above, however, would still need to be updated.
  */
-export type InquiryType = keyof QuestionMap<Answers>;
+export type InquiryType<
+	T extends DecisionTree = DecisionTree
+> = keyof QuestionMap<T>;
 
 export const isInquiryType = (value: unknown): value is InquiryType => {
-  return typeof value === 'string'
-    && Object.keys(InquiryTypes).includes(value)
-    && Object.keys(createPromptModule().prompts).includes(value);
+	return (
+		typeof value === 'string' &&
+		Object.keys(InquiryTypes).includes(value) &&
+		Object.keys(createPromptModule().prompts).includes(value)
+	);
 };

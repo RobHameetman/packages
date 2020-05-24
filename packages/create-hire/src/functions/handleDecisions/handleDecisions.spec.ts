@@ -1,10 +1,8 @@
 import chalk from 'chalk';
-import { handleDecisions } from './handleDecisions';
-import { createDecisionTree } from '../../types';
 import { Actions } from './../../enums';
 import {
 	handleBrowseProjectsStub,
-	// handleDecisionsWithStubs,
+	handleDecisionsWithStubsFor,
 	handleRequestInterviewStub,
 	handleReviewResumeStub,
 } from './__test__';
@@ -12,12 +10,7 @@ import {
 describe(chalk`handleDecisions()`, (): void => {
 	describe(chalk`given {cyan Actions.BrowseProjects}`, (): void => {
 		beforeEach((): void => {
-			handleDecisions(
-				createDecisionTree({ action: Actions.BrowseProjects }),
-				handleReviewResumeStub,
-				handleBrowseProjectsStub,
-				handleRequestInterviewStub,
-			);
+			handleDecisionsWithStubsFor(Actions.BrowseProjects);
 		});
 
 		it(chalk`should allow the user to browse public projects`, (): void => {
@@ -27,12 +20,7 @@ describe(chalk`handleDecisions()`, (): void => {
 
 	describe(chalk`given {cyan Actions.RequestInterview}`, (): void => {
 		beforeEach((): void => {
-			handleDecisions(
-				createDecisionTree({ action: Actions.RequestInterview }),
-				handleReviewResumeStub,
-				handleBrowseProjectsStub,
-				handleRequestInterviewStub,
-			);
+			handleDecisionsWithStubsFor(Actions.RequestInterview);
 		});
 
 		it(chalk`should allow the user to request an interview`, (): void => {
@@ -42,12 +30,7 @@ describe(chalk`handleDecisions()`, (): void => {
 
 	describe(chalk`given {cyan Actions.ReviewResume}`, (): void => {
 		beforeEach((): void => {
-			handleDecisions(
-				createDecisionTree({ action: Actions.ReviewResume }),
-				handleReviewResumeStub,
-				handleBrowseProjectsStub,
-				handleRequestInterviewStub,
-			);
+			handleDecisionsWithStubsFor(Actions.ReviewResume);
 		});
 
 		it(chalk`should allow the user to review my resume`, (): void => {
