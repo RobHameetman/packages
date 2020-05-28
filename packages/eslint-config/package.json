@@ -1,6 +1,6 @@
 {
 	"name": "@rob.hameetman/eslint-config",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Eslint config for `@rob.hameetman` packages",
 	"author": "Robert H. Hameetman <engineering@robhameetman.com>",
 	"homepage": "https://www.robhameetman.com/",
