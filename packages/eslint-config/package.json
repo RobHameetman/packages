@@ -1,6 +1,6 @@
 {
 	"name": "@rob.hameetman/eslint-config",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Eslint config for `@rob.hameetman` packages",
 	"author": "Robert H. Hameetman <engineering@robhameetman.com>",
 	"homepage": "https://www.robhameetman.com/",
@@ -18,7 +18,7 @@
 	"files": [
 		"./dist/*",
 		"./index.js",
-		"README.md"
+		"./README.md"
 	],
 	"scripts": {
 		"build": "NODE_ENV=production rm -rf ./dist && tsc -P tsconfig.json",

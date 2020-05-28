@@ -1,10 +1,10 @@
 ./src
 **/__test__
 tsconfig.json
-tsconfig.module.json
 .github
 .vscode
 **/*.spec.*
 coverage
 .nyc_output
 *.log
+!dist/*
