@@ -1,6 +1,6 @@
 {
 	"name": "@rob.hameetman/eslint-config",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Eslint config for `@rob.hameetman` packages",
 	"author": "Robert H. Hameetman <engineering@robhameetman.com>",
 	"homepage": "https://www.robhameetman.com/",
@@ -12,7 +12,7 @@
 	"bugs": {
 		"url": "https://github.com/RobHameetman/packages/issues"
 	},
-	"main": "./dist/index.js",
+	"main": "./index.js",
 	"module": "./dist/index.js",
 	"typings": "./dist/index.d.ts",
 	"files": [
