@@ -1,6 +1,4 @@
 src/
-**/__test__
-**/*.spec.*
 tsconfig.json
 .github
 .vscode
