@@ -15,14 +15,10 @@
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"typings": "./dist/index.d.ts",
-	"bin": {},
-	"directories": {
-		"lib": "src",
-		"test": "__tests__"
-	},
 	"files": [
 		"./dist",
-		"./index.js"
+		"./index.js",
+		"README.md"
 	],
 	"scripts": {
 		"build": "NODE_ENV=production rm -rf ./dist && tsc -P tsconfig.json",
