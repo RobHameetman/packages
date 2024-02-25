@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"declaration": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+		"moduleResolution": "node",
+    "noImplicitAny": true,
+		"noImplicitThis": true,
+		"outDir": "./dist/",
+		"paths": {
+			"@/*": ["./lib/*"],
+			"@test/*": ["./test/*"]
+		},
+		"resolveJsonModule": true,
+		"rootDirs": ["./lib/", "./typings/"],
+		"strict": true,
+		"strictNullChecks": true,
+    "target": "ES2020"
+  },
+  "files": ["lib/index.ts"],
+	"include": [
+		"./typings/",
+	],
+	"exclude": [
+		"./config/",
+		"./dist/",
+		"./node_modules/",
+		"**/*.spec.ts"
+	]
+}
