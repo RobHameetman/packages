@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+		"moduleResolution": "node",
+    "noImplicitAny": true,
+		"noImplicitThis": true,
+		"outDir": "./bin/",
+		"paths": {
+			"@configs/*": ["lib/configs/*"],
+			"@rules/*": ["lib/rules/*"],
+			"@enums/*": ["lib/utils/enums/*"],
+			"@functions/*": ["lib/utils/functions/*"],
+			"@types/*": ["lib/utils/types/*"],
+			"@test/*": ["test/*"]
+		},
+		"resolveJsonModule": true,
+		"rootDir": "./lib/",
+		"strict": true,
+		"strictNullChecks": true,
+    "target": "ES6"
+  },
+	"exclude": [
+		"./config/",
+		"./node_modules/",
+		"./test/",
+		"**/*.spec.ts"
+	]
+}
