@@ -42,7 +42,11 @@ export default [
 				targets: [
 					{
 						src: `${process.cwd()}/typings/experimental.d.ts`,
-						dest: `${process.cwd()}/dist`,
+						dest: `${process.cwd()}/dist/typings/`,
+					},
+					{
+						src: `${process.cwd()}/node_modules/@types/react/ts5.0/index.d.ts`,
+						dest: `${process.cwd()}/dist/typings/`,
 					},
 				],
 			}),

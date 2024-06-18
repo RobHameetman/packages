@@ -1,6 +1,6 @@
 {
 	"name": "@rob.hameetman/type-guards",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Eslint plugin for TypeScript projects",
 	"author": "Robert H. Hameetman <engineering@robhameetman.com>",
 	"homepage": "https://www.robhameetman.com/",
