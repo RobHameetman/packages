@@ -3,8 +3,8 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 import copy from 'rollup-plugin-copy';
-// import deleteFiles from 'rollup-plugin-delete';
-// import dts from 'rollup-plugin-dts';
+import deleteFiles from 'rollup-plugin-delete';
+import dts from 'rollup-plugin-dts';
 import { terser } from 'rollup-plugin-terser';
 
 export default [
@@ -52,21 +52,21 @@ export default [
 			}),
 		],
 	},
-	// {
-  //   input: 'dist/index.d.ts',
-  //   output: [{ file: 'dist/index.d.ts', format: 'es' }],
-  //   plugins: [
-	// 		deleteFiles({
-	// 			targets: [
-	// 				'dist/dom/',
-	// 				'dist/html/',
-	// 				'dist/js/',
-	// 				'dist/react/',
-	// 				'dist/utils/',
-	// 			],
-	// 			hook: 'buildEnd',
-	// 		}),
-	// 		dts()
-	// 	],
-  // },
+	{
+    input: 'dist/index.d.ts',
+    output: [{ file: 'dist/index.d.ts', format: 'es' }],
+    plugins: [
+			deleteFiles({
+				targets: [
+					'dist/dom/',
+					'dist/html/',
+					'dist/js/',
+					'dist/react/',
+					'dist/utils/',
+				],
+				hook: 'buildEnd',
+			}),
+			dts()
+		],
+  },
 ];
