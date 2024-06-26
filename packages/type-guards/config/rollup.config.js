@@ -7,16 +7,50 @@ import deleteFiles from 'rollup-plugin-delete';
 import dts from 'rollup-plugin-dts';
 import { terser } from 'rollup-plugin-terser';
 
+// import { DomNodeTypes } from '@/utils/enums/DomNodeTypes';
+
+const subdirectories = [
+	'dom',
+	'html',
+	'js',
+	'react',
+	'utils',
+]
+
+const cleanup = (format = 'cjs') => ({
+	input: `dist/${format}/index.d.ts`,
+	output: [{ file: `dist/${format}/index.d.ts`, format }],
+	plugins: [
+		copy({
+			targets: [
+				{
+					src: `dist/${format}/index.d.ts`,
+					dest: `dist/typings/`,
+				},
+				...subdirectories.map((subdirectory) => ({
+					src: `dist/${format}/${subdirectory}/`,
+					dest: `dist/typings/`,
+				})),
+			],
+		}),
+		deleteFiles({
+			targets: subdirectories.map((subdirectory) => `dist/${format}/${subdirectory}/`),
+			hook: 'buildEnd',
+		}),
+		dts()
+	],
+});
+
 export default [
 	{
 		input: `${process.cwd()}/lib/index.ts`,
 		output: [
 			{
-				file: `${process.cwd()}/dist/index.min.js`,
+				file: `${process.cwd()}/dist/esm/index.min.js`,
 				format: 'esm',
 			},
 			{
-				file: `${process.cwd()}/dist/index.min.cjs`,
+				file: `${process.cwd()}/dist/cjs/index.min.js`,
 				format: 'cjs',
 			},
 		],
@@ -52,21 +86,6 @@ export default [
 			}),
 		],
 	},
-	{
-    input: 'dist/index.d.ts',
-    output: [{ file: 'dist/index.d.ts', format: 'es' }],
-    plugins: [
-			deleteFiles({
-				targets: [
-					'dist/dom/',
-					'dist/html/',
-					'dist/js/',
-					'dist/react/',
-					'dist/utils/',
-				],
-				hook: 'buildEnd',
-			}),
-			dts()
-		],
-  },
+	cleanup('cjs'),
+	cleanup('esm'),
 ];
