@@ -1,13 +1,13 @@
 {
 	"name": "@rob.hameetman/type-guards",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"description": "Eslint plugin for TypeScript projects",
 	"author": "Robert H. Hameetman <engineering@robhameetman.com>",
 	"homepage": "https://www.robhameetman.com/",
 	"license": "MIT",
 	"main": "./dist/cjs/index.min.js",
 	"module": "./dist/esm/index.min.js",
-	"typings": "./dist/index.d.ts",
+	"typings": "./dist/typings/index.d.ts",
 	"keywords": [
 		"typescript",
 		"ts",
