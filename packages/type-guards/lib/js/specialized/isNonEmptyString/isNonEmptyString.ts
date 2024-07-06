@@ -16,3 +16,5 @@ export const isNonEmptyString = (value: unknown): value is string =>
 	 * value
 	 */
 	isString(value) && Boolean(value.length);
+
+export default isNonEmptyString;

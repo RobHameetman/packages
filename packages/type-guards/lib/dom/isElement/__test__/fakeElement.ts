@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker';
 import { fakeNode } from '@/dom/isNode/__test__';
+import { fakeAttributes } from '@/dom/areAttributes/__test__';
 import { isServer } from '@/utils/functions/isServer';
-import { fakeAttributes } from '@/utils/types/Attributes/__test__';
 
 export const fakeElement = ({
 	defaultValue = false,

@@ -23,3 +23,5 @@ export const isAnchorElement = (value: unknown): value is HTMLAnchorElement =>
 	 * value.tagName
 	 */
 	value.tagName === 'A';
+
+export default isAnchorElement;

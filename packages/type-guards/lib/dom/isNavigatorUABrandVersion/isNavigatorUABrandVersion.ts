@@ -31,3 +31,5 @@ export const isNavigatorUABrandVersion = (
 	 */
 	'version' in value &&
 	isString(value.version);
+
+export default isNavigatorUABrandVersion;

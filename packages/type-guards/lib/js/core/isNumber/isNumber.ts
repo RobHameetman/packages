@@ -14,3 +14,5 @@ export const isNumber = (value: unknown): value is number =>
 	 * value
 	 */
 	typeof value === 'number';
+
+export default isNumber;

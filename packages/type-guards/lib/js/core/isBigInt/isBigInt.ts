@@ -14,3 +14,5 @@ export const isBigInt = (value: unknown): value is bigint =>
 	 * value
 	 */
 	typeof value === 'bigint';
+
+export default isBigInt;

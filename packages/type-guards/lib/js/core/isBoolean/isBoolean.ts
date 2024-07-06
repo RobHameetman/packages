@@ -14,3 +14,5 @@ export const isBoolean = (value: unknown): value is boolean =>
 	 * value
 	 */
 	typeof value === 'boolean';
+
+export default isBoolean;

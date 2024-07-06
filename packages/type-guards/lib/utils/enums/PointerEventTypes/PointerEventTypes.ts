@@ -90,3 +90,5 @@ export const isPointerEventType = (value: unknown): value is PointerEventType =>
 	 * value
 	 */
 	isString(value) && POINTER_EVENT_TYPES.includes(value);
+
+export default PointerEventTypes;

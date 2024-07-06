@@ -31,3 +31,5 @@ export const isFunction = <T = unknown, U = unknown>(
 	typeof value === 'function' &&
 	(isT ? isT(value(...args)) : true) &&
 	(isU ? args.every(isU) : true);
+
+export default isFunction;

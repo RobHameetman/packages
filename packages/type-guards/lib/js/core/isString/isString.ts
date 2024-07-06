@@ -14,3 +14,5 @@ export const isString = (value: unknown): value is string =>
 	 * value
 	 */
 	typeof value === 'string';
+
+export default isString;

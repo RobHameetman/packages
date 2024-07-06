@@ -50,3 +50,5 @@ export const isScrollEventType = (value: unknown): value is ScrollEventType =>
 	 * value
 	 */
 	isString(value) && SCROLL_EVENT_TYPES.includes(value);
+
+export default ScrollEventTypes;

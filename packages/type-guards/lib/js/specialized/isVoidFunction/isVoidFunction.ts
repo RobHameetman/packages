@@ -26,3 +26,5 @@ export const isVoidFunction = <T = unknown>(
 	typeof value === 'function' &&
 	(isT ? args.every(isT) : true) &&
 	typeof (args.length ? value(...args) : value()) === 'undefined';
+
+export default isVoidFunction;

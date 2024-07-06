@@ -20,3 +20,5 @@ export const areNavigatorUABrandVersions = (
 	 * value
 	 */
 	isArray(value) && value.every(isNavigatorUABrandVersion);
+
+export default areNavigatorUABrandVersions;

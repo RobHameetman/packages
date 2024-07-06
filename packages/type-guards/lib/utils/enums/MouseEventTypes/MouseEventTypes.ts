@@ -119,3 +119,5 @@ export const isMouseEventType = (value: unknown): value is MouseEventType =>
 	 * value
 	 */
 	isString(value) && MOUSE_EVENT_TYPES.includes(value);
+
+export default MouseEventTypes;

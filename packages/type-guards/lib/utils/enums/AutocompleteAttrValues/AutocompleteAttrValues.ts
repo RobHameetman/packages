@@ -405,3 +405,5 @@ export const isAutocompleteAttrValue = (value: unknown): value is AutocompleteAt
 	 * value
 	 */
 	isString(value) && (AUTOCOMPLETE_ATTR_VALUES as ReadonlyArray<string>).includes(value);
+
+export default AutocompleteAttrValues;

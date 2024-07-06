@@ -16,3 +16,5 @@ export const isNonNegativeNumber = (value: unknown): value is number =>
 	 * value
 	 */
 	isNumber(value) && value >= 0;
+
+export default isNonNegativeNumber;

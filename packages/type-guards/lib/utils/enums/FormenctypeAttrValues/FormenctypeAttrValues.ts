@@ -57,3 +57,5 @@ export const isFormenctypeAttrValue = (value: unknown): value is FormenctypeAttr
 	 * value
 	 */
 	isString(value) && (FORMENCTYPE_ATTR_VALUES as ReadonlyArray<string>).includes(value);
+
+export default FormenctypeAttrValues;

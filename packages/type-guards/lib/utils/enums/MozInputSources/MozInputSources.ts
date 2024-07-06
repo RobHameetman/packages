@@ -71,3 +71,5 @@ export const isMozInputSource = (value: unknown): value is MozInputSource =>
 	 * value
 	 */
 	isNumber(value) && MOZ_INPUT_SOURCES.includes(value);
+
+export default MozInputSources;

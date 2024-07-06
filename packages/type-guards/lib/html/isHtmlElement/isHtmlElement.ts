@@ -23,3 +23,5 @@ export const isHtmlElement = (value: unknown): value is HTMLElement =>
 	 */
 	'title' in value &&
 	isString(value.title);
+
+export default isHtmlElement;

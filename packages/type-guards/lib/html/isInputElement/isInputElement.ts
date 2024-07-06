@@ -20,3 +20,5 @@ export const isInputElement = (value: unknown): value is HTMLInputElement =>
 	 * value.tagName
 	 */
 	value.tagName === 'INPUT';
+
+export default isInputElement;

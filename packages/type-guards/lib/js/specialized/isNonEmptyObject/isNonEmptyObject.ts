@@ -22,3 +22,5 @@ export const isNonEmptyObject = <T = unknown>(
 	 * value
 	 */
 	isObject<T>(value, isT) && Boolean(Object.keys(value).length);
+
+export default isNonEmptyObject;

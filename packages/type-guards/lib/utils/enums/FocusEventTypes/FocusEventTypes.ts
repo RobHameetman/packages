@@ -72,3 +72,5 @@ export const isFocusEventType = (value: unknown): value is FocusEventType =>
 	 * value
 	 */
 	isString(value) && FOCUS_EVENT_TYPES.includes(value);
+
+export default FocusEventTypes;

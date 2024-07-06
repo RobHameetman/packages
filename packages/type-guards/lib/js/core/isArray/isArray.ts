@@ -20,3 +20,5 @@ export const isArray = <T = unknown>(
 	 * value
 	 */
 	value instanceof Array && (isT ? value.every(isT) : true);
+
+export default isArray;

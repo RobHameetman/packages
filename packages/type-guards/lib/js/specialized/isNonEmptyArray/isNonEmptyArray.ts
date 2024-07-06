@@ -22,3 +22,5 @@ export const isNonEmptyArray = <T = unknown>(
 	 * value
 	 */
 	isArray<T>(value, isT) && Boolean(value.length);
+
+export default isNonEmptyArray;

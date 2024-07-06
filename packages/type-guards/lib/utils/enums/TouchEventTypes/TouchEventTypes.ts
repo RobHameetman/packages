@@ -58,3 +58,5 @@ export const isTouchEventType = (value: unknown): value is TouchEventType =>
 	 * value
 	 */
 	isString(value) && TOUCH_EVENT_TYPES.includes(value);
+
+export default TouchEventTypes;

@@ -236,3 +236,5 @@ export const isInputType = (value: unknown): value is InputType =>
 	 * value
 	 */
 	isString(value) && (INPUT_TYPES as ReadonlyArray<string>).includes(value);
+
+export default InputTypes;

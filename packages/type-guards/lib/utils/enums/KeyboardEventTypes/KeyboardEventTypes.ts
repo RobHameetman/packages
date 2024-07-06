@@ -45,3 +45,5 @@ export const isKeyboardEventType = (
 	 * value
 	 */
 	isString(value) && KEYBOARD_EVENT_TYPES.includes(value);
+
+export default KeyboardEventTypes;

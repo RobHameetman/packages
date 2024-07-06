@@ -2,7 +2,7 @@ import { isObject } from '@/js/core/isObject';
 import { DomNodeTypes, isDomNodeType } from '@/utils/enums/DomNodeTypes';
 import { isBrowser } from '@/utils/functions/isBrowser';
 
-type MaybeNode = Node | Record<string, unknown>;
+export type MaybeNode = Node | Record<string, unknown>;
 
 /**
  * Checks that an `unknown` value is an {@link Node} node.
@@ -31,3 +31,5 @@ export const isNode = <T extends Node = Node>(
 	'nodeType' in (value as MaybeNode) &&
 	isDomNodeType(DomNodeTypes[(value as MaybeNode).nodeType as number]) &&
 	(type ? (value as MaybeNode).nodeType === type : true);
+
+export default isNode;

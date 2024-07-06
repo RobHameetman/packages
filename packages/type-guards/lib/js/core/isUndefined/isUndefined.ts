@@ -14,3 +14,5 @@ export const isUndefined = (value: unknown): value is undefined =>
 	 * value
 	 */
 	typeof value === 'undefined';
+
+export default isUndefined;

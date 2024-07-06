@@ -80,3 +80,5 @@ export const isDragEventType = (value: unknown): value is DragEventType =>
 	 * value
 	 */
 	isString(value) && DRAG_EVENT_TYPES.includes(value);
+
+export default DragEventTypes;

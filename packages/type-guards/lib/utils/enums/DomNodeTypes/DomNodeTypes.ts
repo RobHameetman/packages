@@ -96,3 +96,5 @@ export const isDomNodeType = (value: unknown): value is DomNodeType =>
 	 * value
 	 */
 	isString(value) && DOM_NODE_TYPES.includes(value);
+
+export default DomNodeTypes;

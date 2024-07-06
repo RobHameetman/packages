@@ -48,3 +48,5 @@ export const isPointerType = (value: unknown): value is PointerType =>
 	 * value
 	 */
 	isString(value) && POINTER_TYPES.includes(value);
+
+export default PointerTypes;

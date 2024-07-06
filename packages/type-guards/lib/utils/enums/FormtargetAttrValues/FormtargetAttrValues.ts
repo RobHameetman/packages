@@ -69,3 +69,5 @@ export const isFormtargetAttrValue = (value: unknown): value is FormtargetAttrVa
 	 * value
 	 */
 	isString(value) && (FORMTARGET_ATTR_VALUES as ReadonlyArray<string>).includes(value);
+
+export default FormtargetAttrValues;

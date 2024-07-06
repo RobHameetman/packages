@@ -21,3 +21,5 @@ export const isUndefinedOrNull = <T = unknown>(
 	 * value
 	 */
 	isUndefined(value) || isNull(value);
+
+export default isUndefinedOrNull;

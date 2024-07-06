@@ -14,3 +14,5 @@ export const isSymbol = (value: unknown): value is symbol =>
 	 * value
 	 */
 	typeof value === 'symbol';
+
+export default isSymbol;

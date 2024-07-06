@@ -26,3 +26,5 @@ export const isObject = <T = unknown>(
 	value !== null &&
 	!(value instanceof Array) &&
 	(isT ? Object.values(value).every(isT) : true);
+
+export default isObject;

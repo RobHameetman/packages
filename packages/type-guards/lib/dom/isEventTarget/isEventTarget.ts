@@ -24,18 +24,20 @@ export const isEventTarget = (value: unknown): value is EventTarget =>
 	(isBrowser()
 		? value instanceof EventTarget
 		: isObject(value)) &&
-		/**
-		 * value.addEventListener()
-		 */
-		'addEventListener' in (value as MaybeEventTarget) &&
-		isFunction((value as MaybeEventTarget).addEventListener) &&
-		/**
-		 * value.dispatchEvent()
-		 */
-		'dispatchEvent' in (value as MaybeEventTarget) &&
-		isFunction((value as MaybeEventTarget).dispatchEvent) &&
-		/**
-		 * value.removeEventListener()
-		 */
-		'removeEventListener' in (value as MaybeEventTarget) &&
-		isFunction((value as MaybeEventTarget).removeEventListener);
+	/**
+	 * value.addEventListener()
+	 */
+	'addEventListener' in (value as MaybeEventTarget) &&
+	isFunction((value as MaybeEventTarget).addEventListener) &&
+	/**
+	 * value.dispatchEvent()
+	 */
+	'dispatchEvent' in (value as MaybeEventTarget) &&
+	isFunction((value as MaybeEventTarget).dispatchEvent) &&
+	/**
+	 * value.removeEventListener()
+	 */
+	'removeEventListener' in (value as MaybeEventTarget) &&
+	isFunction((value as MaybeEventTarget).removeEventListener);
+
+export default isEventTarget;

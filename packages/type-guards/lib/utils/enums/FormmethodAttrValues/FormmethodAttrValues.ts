@@ -61,3 +61,5 @@ export const isFormmethodAttrValue = (value: unknown): value is FormmethodAttrVa
 	 * value
 	 */
 	isString(value) && (FORMMETHOD_ATTR_VALUES as ReadonlyArray<string>).includes(value);
+
+export default FormmethodAttrValues;

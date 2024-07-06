@@ -29,3 +29,5 @@ export const isDateInput = <
 	isT
 		? isT(value)
 		: isString(value) || isNumber(value) || value instanceof Date;
+
+export default isDateInput;

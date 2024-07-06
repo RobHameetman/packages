@@ -63,3 +63,5 @@ export const isAutocapitalizeAttrValue = (value: unknown): value is Autocapitali
 	 * value
 	 */
 	isString(value) && (AUTOCAPITALIZE_ATTR_VALUES as ReadonlyArray<string>).includes(value);
+
+export default AutocapitalizeAttrValues;

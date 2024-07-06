@@ -24,3 +24,5 @@ export const isSvgElement = (value: unknown): value is SVGElement =>
 	 */
 	'namespaceURI' in value &&
 	value.namespaceURI === DomNodeNamespaces.SVG;
+
+export default isSvgElement;

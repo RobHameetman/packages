@@ -21,14 +21,16 @@
 		"strictNullChecks": true,
     "target": "esnext"
   },
-  "files": ["lib/index.ts"],
+  "files": [
+		"lib/index.ts",
+		"lib/react.ts"
+	],
 	"include": [
 		"./typings/",
 	],
 	"exclude": [
 		"./config/",
 		"./dist/",
-		"./node_modules/",
-		"**/*.spec.ts"
+		"./node_modules/"
 	]
 }

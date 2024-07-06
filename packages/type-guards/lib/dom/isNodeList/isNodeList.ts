@@ -18,3 +18,5 @@ export const isNodeList = (value: unknown): value is NodeList =>
 	 */
 	(!isUndefined(window) && value instanceof NodeList) ||
 	(isObject(value) && Object.values(value).every((node) => isNode(node)));
+
+export default isNodeList;

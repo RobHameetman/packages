@@ -38,3 +38,5 @@ export const isDomNodeNamespace = (value: unknown): value is DomNodeNamespace =>
 	 * value
 	 */
 	DOM_NODE_NAMESPACES.includes(value as DomNodeNamespaces);
+
+export default DomNodeNamespaces;

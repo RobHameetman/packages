@@ -61,3 +61,5 @@ export const isTargetAttrValue = (value: unknown): value is TargetAttrValue =>
 	 * value
 	 */
 	isString(value) && (TARGET_ATTR_VALUES as ReadonlyArray<string>).includes(value);
+
+export default TargetAttrValues;

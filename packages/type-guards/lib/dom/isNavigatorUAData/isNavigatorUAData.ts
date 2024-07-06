@@ -5,7 +5,7 @@ import { isString } from '@/js/core/isString';
 import { isUndefined } from '@/js/core/isUndefined';
 import { isBrowser } from '@/utils/functions/isBrowser';
 
-type MaybeNavigatorUAData = NavigatorUAData | Record<string, unknown>;
+export type MaybeNavigatorUAData = NavigatorUAData | Record<string, unknown>;
 
 /**
  * Checks that an `unknown` value is a {@link NavigatorUAData}.
@@ -29,18 +29,20 @@ export const isNavigatorUAData = (value: unknown): value is NavigatorUAData =>
 	!isUndefined(window.NavigatorUAData)
 		? value instanceof NavigatorUAData
 		: isObject(value)) &&
-		/**
-		 * value.brands
-		 */
-		'brands' in (value as MaybeNavigatorUAData) &&
-		areNavigatorUABrandVersions((value as MaybeNavigatorUAData).brands) &&
-		/**
-		 * value.mobile
-		 */
-		'mobile' in (value as MaybeNavigatorUAData) &&
-		isBoolean((value as MaybeNavigatorUAData).mobile) &&
-		/**
-		 * value.platform
-		 */
-		'platform' in (value as MaybeNavigatorUAData) &&
-		isString((value as MaybeNavigatorUAData).platform);
+	/**
+	 * value.brands
+	 */
+	'brands' in (value as MaybeNavigatorUAData) &&
+	areNavigatorUABrandVersions((value as MaybeNavigatorUAData).brands) &&
+	/**
+	 * value.mobile
+	 */
+	'mobile' in (value as MaybeNavigatorUAData) &&
+	isBoolean((value as MaybeNavigatorUAData).mobile) &&
+	/**
+	 * value.platform
+	 */
+	'platform' in (value as MaybeNavigatorUAData) &&
+	isString((value as MaybeNavigatorUAData).platform);
+
+export default isNavigatorUAData;

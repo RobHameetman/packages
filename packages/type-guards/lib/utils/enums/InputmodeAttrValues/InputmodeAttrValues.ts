@@ -82,3 +82,5 @@ export const isInputmodeAttrValue = (value: unknown): value is InputmodeAttrValu
 	 * value
 	 */
 	isString(value) && (INPUTMODE_ATTR_VALUES as ReadonlyArray<string>).includes(value);
+
+export default InputmodeAttrValues;
