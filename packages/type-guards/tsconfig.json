@@ -3,7 +3,6 @@
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
 		"baseUrl": ".",
-		"declaration": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
     "module": "esnext",
@@ -26,7 +25,7 @@
 		"lib/react.ts"
 	],
 	"include": [
-		"./typings/",
+		"./typings/"
 	],
 	"exclude": [
 		"./config/",
