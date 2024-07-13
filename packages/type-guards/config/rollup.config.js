@@ -75,10 +75,7 @@ export default [
 			execute([
 				`cat ${process.cwd()}/dist/esm/experimental.d.ts ${process.cwd()}/dist/esm/index.d.ts > ${process.cwd()}/dist/esm/index.d.mts`,
 				`cat ${process.cwd()}/dist/cjs/experimental.d.ts ${process.cwd()}/dist/cjs/index.d.ts > ${process.cwd()}/dist/cjs/index.d.cts &&
-					rm ${process.cwd()}/dist/cjs/index.d.ts &&
 					mv ${process.cwd()}/dist/cjs/index.d.cts ${process.cwd()}/dist/cjs/index.d.ts`,
-				`cat ${process.cwd()}/dist/cjs/experimental.d.ts ${process.cwd()}/dist/cjs/index.d.ts > ${process.cwd()}/dist/temp-cjs-index.d.ts &&
-					mv ${process.cwd()}/dist/temp-cjs-index.d.ts ${process.cwd()}/dist/cjs/index.d.ts`,
 				`find ${process.cwd()}/dist/esm -name \\*.min.js -exec bash -c 'cp "$0" "\${0%.min.js}.min.mjs"' {} \\;`,
 				`find ${process.cwd()}/dist/esm -name \\*.d.ts -exec bash -c 'cp "$0" "\${0%.d.ts}.d.mts"' {} \\;`,
 				`cp -r ${process.cwd()}/dist/esm/* ${process.cwd()}/dist/ && cp -r ${process.cwd()}/dist/cjs/* ${process.cwd()}/dist/`,
