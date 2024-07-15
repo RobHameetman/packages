@@ -1,5 +1,7 @@
+export * from './areAttributes';
 export * from './areNavigatorUABrandVersions';
 export * from './isAttr';
+export * from './isElement';
 export * from './isEventTarget';
 export * from './isNavigatorUABrandVersion';
 export * from './isNavigatorUAData';
